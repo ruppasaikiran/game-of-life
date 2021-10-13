@@ -8,7 +8,7 @@ pipeline {
         stage ('Compile Stage') {
 
             steps {
-                    git 'https://github.com/ruppasaikiran/game-of-life.git'
+                    //git 'https://github.com/ruppasaikiran/game-of-life.git'
                     sh 'mvn clean compile'
                 }
             }
@@ -16,7 +16,7 @@ pipeline {
         stage ('Testing Stage') {
 
             steps {
-                git 'https://github.com/ruppasaikiran/game-of-life.git'
+                //git 'https://github.com/ruppasaikiran/game-of-life.git'
                     sh 'mvn test'
                 }
             }
@@ -25,7 +25,7 @@ pipeline {
 
         stage ('Package Stage') {
             steps {
-                git 'https://github.com/ruppasaikiran/game-of-life.git'
+                //git 'https://github.com/ruppasaikiran/game-of-life.git'
                     sh 'mvn package'
                 }
             }
